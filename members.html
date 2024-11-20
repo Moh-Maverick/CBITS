@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C-Bits</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Members Section */
+        .members-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 1rem;
+        }
+
+        .tab-button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .tab-button.active,
+        .tab-button:hover {
+            background-color: seagreen;
+            ;
+            color: white;
+        }
+
+        /* Members Section */
+        .members-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .members-container {
+            margin-top: 150px;
+        }
+
+        .member-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .member-card h2 {
+            font-size: 1.3rem;
+            margin: 1rem 0 0.5rem;
+            color: #333;
+        }
+
+        .member-card p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            color: seagreen;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffce5c;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #6c63ff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tabs {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .members-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .member-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top px-0 pb-0 mb-2" id="navbar"
+            data-navbar-darken-on-scroll="white">
+            <div class="container-fluid align-items-center py-2"><a class="navbar-brand flex-center"
+                    href="index.html"><img class="logo" src="assets/img/logo2.png" alt="open enterprise" /><span
+                        class="ms-2 d-none d-sm-block fw-bold"></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mt-3 mt-xl-0">
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="index.html#hero">Home</a>
+                        </li>
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="events.html">Events</a></li>
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="index.html#resources">Resources</a></li>
+
+                        </li>
+                        <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
+                                href="members.html">Members</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Members Section -->
+        <div class="members-container">
+            <h1>Our Members</h1>
+            <div class="tabs">
+                <button class="tab-button active" onclick="switchSection('faculty')">Faculty</button>
+                <button class="tab-button" onclick="switchSection('students')">Students</button>
+            </div>
+
+            <div id="faculty" class="members-section">
+                <!-- Faculty Member 1 -->
+                <div class="member-card">
+                    <img src="assets\img\members\p1.jpeg" alt="Dr. Alice Johnson">
+                    <h2>Dr. Alice Johnson</h2>
+                    <p>Professor of Cybersecurity</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank">🔗</a>
+                        <a href="https://scholar.google.com/" target="_blank">📖</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="students" class="members-section" style="display: none;">
+                <!-- Student Member 1 -->
+                <div class="member-card">
+                    <img src="assets\img\members\p1.jpeg" alt="John Doe">
+                    <h2>John Doe</h2>
+                    <p>Cybersecurity Enthusiast</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank">🔗</a>
+                        <a href="https://scholar.google.com/" target="_blank">📖</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="py-4">
+
+            <div class="container-xxl">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 text-sm-center text-lg-start">
+                        <h2 class="mb-lg-0">C-BITS</h2>
+                    </div>
+                    <div class="col-lg-6 text-sm-center text-lg-end">
+                        <p class="mb-0">&copy;C-Bits 2024 (Temp footer) </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+
+        </section>
+
+        <script>
+            function switchSection(section) {
+                const facultySection = document.getElementById("faculty");
+                const studentSection = document.getElementById("students");
+                const tabButtons = document.querySelectorAll(".tab-button");
+
+                if (section === "faculty") {
+                    facultySection.style.display = "flex";
+                    studentSection.style.display = "none";
+                } else {
+                    facultySection.style.display = "none";
+                    studentSection.style.display = "flex";
+                }
+
+                tabButtons.forEach(button => button.classList.remove("active"));
+                document.querySelector(`.tab-button[onclick="switchSection('${section}')"]`).classList.add("active");
+            }
+        </script>
+</body>
+
+</html>
