@@ -20304,6 +20304,30 @@ section {
   padding-bottom: 4rem;
 }
 
+section.py-4 {
+  border-top: 1px solid #ddd;
+  /* Optional: adds a subtle border */
+}
+
+section.py-4 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+section.py-4 p,
+section.py-4 a {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+section.py-4 a:hover {
+  text-decoration: underline;
+  color: #000;
+  /* Darken link color on hover */
+}
+
+
 @media (min-width: 992px) {
   section {
     padding-top: 7.5rem;
@@ -21079,7 +21103,7 @@ label {
 }
 
 .navbar .logo {
-  width: 80px;
+  width: 13.1rem;
   height: auto;
 }
 

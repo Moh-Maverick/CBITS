@@ -26,7 +26,7 @@
 
 
 
-    <link rel="stylesheet" href="styles.css">
+
     <style>
         /* Members Section */
         .members-container {
@@ -39,7 +39,7 @@
             margin-top: 2rem;
         }
 
-        h1 {
+        .members-container h1 {
             text-align: center;
             color: #333;
             font-size: 2.5rem;
@@ -134,23 +134,7 @@
             color: #ffce5c;
         }
 
-        /* Footer */
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 3rem;
-        }
 
-        .footer p {
-            font-size: 0.9rem;
-        }
-
-        .footer a {
-            color: #6c63ff;
-            text-decoration: underline;
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -177,8 +161,8 @@
         <nav class="navbar navbar-expand-xl navbar-light fixed-top px-0 pb-0 mb-2" id="navbar"
             data-navbar-darken-on-scroll="white">
             <div class="container-fluid align-items-center py-2"><a class="navbar-brand flex-center"
-                    href="index.html"><img class="logo" src="assets/img/logo2.png" alt="open enterprise" /><span
-                        class="ms-2 d-none d-sm-block fw-bold"></span></a>
+                    href="index.html"><img class="logo" src="assets\img\logo1.png" alt="open enterprise" /><span
+                        class="ms-2 d-none d-sm-block "></span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
@@ -186,7 +170,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mt-3 mt-xl-0">
                         <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
-                                href="index.html#hero">Home</a>
+                                href="index.html">Home</a>
                         </li>
                         <li class="nav-item ps-0 ps-xl-4 ms-2"><a class="nav-link fs-2 fw-medium"
                                 href="index.html#about">About</a>
@@ -214,65 +198,252 @@
             <div class="tabs">
                 <button class="tab-button active" onclick="switchSection('faculty')">Faculty</button>
                 <button class="tab-button" onclick="switchSection('students')">Students</button>
+                <button class="tab-button" onclick="switchSection('affiliated')">Affiliated Faculty</button>
             </div>
 
             <div id="faculty" class="members-section">
                 <!-- Faculty Member 1 -->
                 <div class="member-card">
-                    <img src="assets\img\members\p1.jpeg" alt="Dr. Alice Johnson">
-                    <h2>Dr. Alice Johnson</h2>
-                    <p>Professor of Cybersecurity</p>
+                    <img src="assets\img\members\f1.jpeg" alt="Dr. Alice Johnson">
+                    <h2>Dr. Syed Thouheed Ahmed</h2>
+                    <p>Associate Professor</p>
                     <div class="social-icons">
-                        <a href="https://linkedin.com/" target="_blank">🔗</a>
+                        <a href="https://www.linkedin.com/in/syedthouheed/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=3OU71eoAAAAJ&view_op=list_works&sortby=pubdate"
+                            target="_blank">📖</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\f2.jpeg" alt="Dr. Alice Johnson">
+                    <h2>Prof. Amrutha PV</h2>
+                    <p>Assistant Professor</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://scholar.google.com/" target="_blank">📖</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\f3.jpeg" alt="Dr. Alice Johnson">
+                    <h2>Ms. Jyothi M V</h2>
+                    <p>Assistant Professor</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://scholar.google.com/" target="_blank">📖</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\f4.jpeg" alt="Dr. Alice Johnson">
+                    <h2>Ms. Nandini S</h2>
+                    <p>Assistant Professor</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://scholar.google.com/" target="_blank">📖</a>
                     </div>
                 </div>
             </div>
+
+
+
+
 
             <div id="students" class="members-section" style="display: none;">
                 <!-- Student Member 1 -->
                 <div class="member-card">
                     <img src="assets\img\members\p1.jpeg" alt="John Doe">
-                    <h2>John Doe</h2>
-                    <p>Cybersecurity Enthusiast</p>
+                    <h2>Sudhanshu Bhardwaj </h2>
+                    <p>President</p>
                     <div class="social-icons">
-                        <a href="https://linkedin.com/" target="_blank">🔗</a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\p2.jpeg" alt="John Doe">
+                    <h2>Chetan G Gaonkar</h2>
+                    <p>Vice President</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chetanggaonkar" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ChetanGGaonkar" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\p3.jpeg" alt="John Doe">
+                    <h2>Mohit R</h2>
+                    <p>Technical Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/mohitr26" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Moh-Mavrick" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p4.jpeg" alt="John Doe">
+                    <h2>Yashraj Nair</h2>
+                    <p>Technical Team</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yashraj-nair-478b5a256" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/yusshhh/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p5.jpeg" alt="John Doe">
+                    <h2>Joshua Briggs</h2>
+                    <p>Technical Team</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/joshua-briggs-1927bb2a3" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Joshuastevenbriggs" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p6.jpeg" alt="John Doe">
+                    <h2>Santhosh.S</h2>
+                    <p>Technical Team</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/santhosh-s-9a7251308" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p8.jpeg" alt="John Doe">
+                    <h2>Dashrath Choudhari</h2>
+                    <p>Event Management Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets\img\members\p7.jpeg" alt="John Doe">
+                    <h2>Shubham Kumar Pandey </h2>
+                    <p>Event Management Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p12.jpeg" alt="John Doe">
+                    <h2>Banu Prasad CH</h2>
+                    <p>Event Management Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p9.jpeg" alt="John Doe">
+                    <h2>T.V Sri Durgae</h2>
+                    <p>Marketing Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="member-card">
+                    <img src="assets\img\members\p10.jpeg" alt="John Doe">
+                    <h2>Simrah Suhana</h2>
+                    <p>Marketing Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets\img\members\p11.jpeg" alt="John Doe">
+                    <h2>Tanisha Javalkar </h2>
+                    <p>Marketing Team</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- 
+
+            <div id="affiliated" class="members-section" style="display: none;"> -->
+            <!-- Affiliated Faculty Members -->
+            <!-- <div class="member-card">
+                    <img src="assets/img/members/p1.jpeg" alt="Dr. Jane Smith">
+                    <h2>Dr. Jane Smith</h2>
+                    <p>Adjunct Professor of AI</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://scholar.google.com/" target="_blank">📖</a>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- Additional Affiliated Faculty Members... -->
+            <!-- </div> -->
+
         </div>
 
-        <section class="py-4">
-
+        <section class="py-4 bg-light">
             <div class="container-xxl">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 text-sm-center text-lg-start">
-                        <h2 class="mb-lg-0">C-BITS</h2>
+                <div class="row justify-content-between align-items-center">
+                    <!-- Left Section -->
+                    <div class="col-lg-4 text-sm-center text-lg-start">
+                        <h2 class="mb-lg-0">C-BITS || Reva University</h2>
                     </div>
-                    <div class="col-lg-6 text-sm-center text-lg-end">
-                        <p class="mb-0">&copy;C-Bits 2024 (Temp footer) </p>
+
+                    <!-- Center Section -->
+                    <div class="col-lg-4 text-sm-center">
+                        <p class="mb-0">&copy; 2024 C-Bits, SoCIT, Reva University. All rights reserved.</p>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="col-lg-4 text-sm-center text-lg-end">
+                        <a href="mailto:contact@cbits.org" class="text-dark text-decoration-none">
+                            Contact Us: contact.cbits@gmail.com
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- end of .container-->
-
         </section>
 
         <script>
             function switchSection(section) {
-                const facultySection = document.getElementById("faculty");
-                const studentSection = document.getElementById("students");
+                const sections = ["faculty", "students", "affiliated"];
                 const tabButtons = document.querySelectorAll(".tab-button");
 
-                if (section === "faculty") {
-                    facultySection.style.display = "flex";
-                    studentSection.style.display = "none";
-                } else {
-                    facultySection.style.display = "none";
-                    studentSection.style.display = "flex";
-                }
+                // Show the selected section and hide others
+                sections.forEach(sec => {
+                    const sectionElement = document.getElementById(sec);
+                    sectionElement.style.display = sec === section ? "flex" : "none";
+                });
 
+                // Update active class on buttons
                 tabButtons.forEach(button => button.classList.remove("active"));
                 document.querySelector(`.tab-button[onclick="switchSection('${section}')"]`).classList.add("active");
             }
