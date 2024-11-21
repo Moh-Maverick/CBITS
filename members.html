@@ -64,7 +64,13 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .tab-button.active,
+        .tab-button.active {
+            background-color: seagreen;
+            ;
+            color: white;
+
+        }
+
         .tab-button:hover {
             background-color: seagreen;
             ;
@@ -196,9 +202,10 @@
         <div class="members-container">
             <h1>Our Members</h1>
             <div class="tabs">
-                <button class="tab-button active" onclick="switchSection('faculty')">Faculty</button>
+                <button class="tab-button" onclick="switchSection('faculty')">Faculty</button>
                 <button class="tab-button" onclick="switchSection('students')">Students</button>
                 <button class="tab-button" onclick="switchSection('affiliated')">Affiliated Faculty</button>
+
             </div>
 
             <div id="faculty" class="members-section">
@@ -414,7 +421,7 @@
                 <div class="row justify-content-between align-items-center">
                     <!-- Left Section -->
                     <div class="col-lg-4 text-sm-center text-lg-start">
-                        <h2 class="mb-lg-0">C-BITS || Reva University</h2>
+                        <h2 class="mb-lg-0">C-BITS | Reva University</h2>
                     </div>
 
                     <!-- Center Section -->
@@ -433,20 +440,26 @@
         </section>
 
         <script>
+            // Function to switch between sections
             function switchSection(section) {
-                const sections = ["faculty", "students", "affiliated"];
-                const tabButtons = document.querySelectorAll(".tab-button");
-
-                // Show the selected section and hide others
+                const sections = ['faculty', 'students', 'affiliated'];
                 sections.forEach(sec => {
-                    const sectionElement = document.getElementById(sec);
-                    sectionElement.style.display = sec === section ? "flex" : "none";
+                    document.getElementById(sec).style.display = (sec === section) ? 'flex' : 'none';
                 });
 
-                // Update active class on buttons
-                tabButtons.forEach(button => button.classList.remove("active"));
-                document.querySelector(`.tab-button[onclick="switchSection('${section}')"]`).classList.add("active");
+                // Update button colors
+                const buttons = document.querySelectorAll('.tab-button');
+                buttons.forEach(button => {
+                    if (button.textContent.toLowerCase() === section) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
             }
+
+            // Default to Faculty section on page load
+            window.onload = () => switchSection('faculty');
         </script>
 
         <script src="vendors/@popperjs/popper.min.js"></script>
