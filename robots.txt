@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /Hidden Path/Maybe Not/
+Disallow: /Hidden_Path/Maybe Not/
